@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{% extends "app1/app1.html"%}
+{% load scripts %}
+    {% block body_block%}
+        <h1>WELCOME TO THE INDEX PAGE</h1>
+        <h2>This is the index.html showing the page</h2>
+        <h1>{{ text|cut:'World' }} </h1>
+        <h2>{{number|add:"-10"}}</h2>
+    {% endblock %}
